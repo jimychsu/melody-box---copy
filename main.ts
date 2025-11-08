@@ -26,7 +26,13 @@ controller.moveSprite(melodyBox)
 info.setScore(0)
 info.startCountdown(240)
 for (let index = 0; index <= 60; index++) {
-    dot = sprites.create(assets.image`dots`, SpriteKind.Food)
+    dot = sprites.create(assets.image`紅`, SpriteKind.Food)
+    dot = sprites.create(assets.image`橘`, SpriteKind.Food)
+    dot = sprites.create(assets.image`黃`, SpriteKind.Food)
+    dot = sprites.create(assets.image`綠`, SpriteKind.Food)
+    dot = sprites.create(assets.image`dot blue`, SpriteKind.Food)
+    dot = sprites.create(assets.image`dot殿`, SpriteKind.Food)
+    dot = sprites.create(assets.image`紫`, SpriteKind.Player)
     tiles.placeOnRandomTile(dot, assets.tile`myTile`)
 }
 for (let index = 0; index <= 2; index++) {
